@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5130B3</color>
+    <color name="colorPrimaryDark">#A5A5A5</color>
+    <color name="colorAccent">#4A4A4A</color>
+    <color name="white">#FFFFFF</color>
+    <color name="green2">#112E0C</color>
+    <color name="white_click">#D1D1D1</color>
+    <color name="blue2">#1666FF</color>
+    <color name="blue">#00A6FE</color>
+    <color name="blue3">#DCFAFF</color>
+    <color name="blue_click">#3B3E8F</color>
+    <color name="black">#000000</color>
+    <color name="black_blue">#1A3124</color>
+    <color name="white_blue">#7D9B88</color>
+    <color name="gray_text_color">#696969</color>
+    <color name="gray_text_color2">#848181</color>
+    <color name="green">#2A9175</color>
+    <color name="gray">#96A3AD</color>
+    <color name="gray6">#E2E2E2</color>
+    <color name="gray7">#848181</color>
+    <color name="gray6_click">#A8A8A8</color>
+    <color name="gray5">#F5F5F5</color>
+    <color name="color_text">#747474</color>
+    <color name="gray3">#C7C7C7</color>
+    <color name="gray4">#E0E0E0</color>
+    <color name="skin">#FFE9CE</color>
+    <color name="skin_click">#D8C5AE</color>
+
+    <color name="gray8">#292D32</color>
+
+
+
+    <color name="white_gray">#E9E9E9</color>
+
+
+    <color name="blueactionbar">#09AAFF</color>
+
+    <color name="yellowbackground">#FFFAEB</color>
+    <color name="bluebackground">#E9FCFF</color>
+
+    <color name="yellow1">#FFF4C7</color>
+
+    <color name="yellow">#FFA200</color>
+    <color name="orange">#FF5919</color>
+    <color name="red">#FF0000</color>
+    <color name="red2">#FF004E</color>
+    <color name="red2_click">#CA003D</color>
+    <color name="dark_blue">#174679</color>
+    <color name="shadow">#83000000</color>
+    <color name="transparent_click">#12000000</color>
+    <color name="transparent_dialog">#37000000</color>
+    <color name="floating_action">#4F2FB1</color>
+
+    <color name="status_info">#2E7AE6</color>
+    <color name="status_info_light">#E1EBFA</color>
+    <color name="status_info_disabled">#802E7AE6</color>
+
+    <color name="bgLocation">#F8F8F8</color>
+    <color name="bgNotifi">#EDE5FF</color>
+    <color name="status_success">#81C784</color>
+    <color name="status_success_light">#C2EDC5</color>
+    <color name="status_success_disabled">#8081C784</color>
+
+    <color name="status_error">#C95454</color>
+    <color name="status_error_light">#F8DADA</color>
+    <color name="status_error_disabled">#80C95454</color>
+    <color name="new_notification">#EEEEEE</color>
+    <color name="blue_position">#2D65FF</color>
+
+
+    <color name="orangecolorpick">#F34334</color>
+    <color name="pinkcolorpick">#E71E62</color>
+    <color name="purple1colorpick">#9B27AE</color>
+    <color name="purple2colorpick">#663AB5</color>
+    <color name="purple3colorpick">#3D51B4</color>
+    <color name="blue1colorpick">#1F96F2</color>
+    <color name="blue2colorpick">#01A9F2</color>
+    <color name="greencolorpick">#009687</color>
+    <color name="yellowcolorpick">#FD9800</color>
+
+
+
+</resources>

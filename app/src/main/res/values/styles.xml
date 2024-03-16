@@ -1,0 +1,320 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityLeftRight</item>
+    </style>
+
+    <style name="AppThemeMain" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">#00486E</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityLeftRight</item>
+    </style>
+
+    <style name="AppThemeLogin" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/gray_text_color2</item>
+        <item name="android:screenOrientation">locked</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityLeftRight</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#4F2FB1</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppThemeStart" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/blue</item>
+<!--        <item name="android:windowBackground">@drawable/face_logo</item>-->
+        <item name="android:screenOrientation">locked</item>
+        <item name="android:windowAnimationStyle">@style/CustomActivityLeftRight</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="CustomActivityLeftRight" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="CustomActivityUpDown" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_to_up</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_to_down</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_to_up</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_to_down</item>
+    </style>
+
+    <style name="TextBlack" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/nunito_regular</item>
+    </style>
+
+    <style name="TextNunitoBlack" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="TextBlackGrey" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="TextBlackGreyBr" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black_blue</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextListLocation" parent="android:Widget.TextView">
+        <item name="android:textColor">#4D4D4D</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+    </style>
+
+    <style name="TextBlack20sp" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="TextBlackBr" parent="android:Widget.TextView">
+        <item name="android:textColor">#3E2782</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/dosis_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextPurple" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="TextPurpleBr" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextTitleNote" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/nunito_black</item>
+    </style>
+
+    <style name="TextWhiteCapsBr" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:fontFamily">@font/roboto_bold</item>
+    </style>
+
+
+
+    <style name="TextGreen" parent="android:Widget.TextView">
+        <item name="android:textColor">#279E44</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="TextGreen2" parent="android:Widget.TextView">
+        <item name="android:textColor">#779856</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="TextGreen3" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white_blue</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="TextGreen2Br" parent="android:Widget.TextView">
+        <item name="android:textColor">#779856</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextGray" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/gray_text_color</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="Textcolor_text" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/gray_text_color2</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="TextWhite" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_10sdp</item>
+    </style>
+
+    <style name="TextWhiteBr" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/nunito_medium</item>
+    </style>
+
+    <style name="TextWhiteCaps" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextBlueCaps" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextBlue" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="TextDarkBlue" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/dark_blue</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    <style name="TextRed" parent="android:Widget.TextView">
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+    </style>
+
+    //dialog
+
+    <style name="DialogAnimationDuration300">
+        <item name="android:windowEnterAnimation">@anim/slide_up_300</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="MyDialog2" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">#00000000</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+
+    <style name="BottomSheet" parent="@style/Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_sheet_dialog_fragment</item>
+    </style>
+
+    <style name="BaseBottomSheetDialog" parent="@style/Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/fui_transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+    </style>
+
+    <style name="MyDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@color/fui_transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowAnimationStyle">@style/Theme.Design.Light.BottomSheetDialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="CustomTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="CustomTextAppearanceTab2" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--    <style name="SheetDialog" parent="Theme.Design.Light.BottomSheetDialog">-->
+    <!--        &lt;!&ndash;<item name="android:windowCloseOnTouchOutside">false</item>&ndash;&gt;-->
+    <!--        <item name="android:windowIsTranslucent">true</item>-->
+    <!--        <item name="android:windowContentOverlay">@null</item>-->
+    <!--        <item name="android:colorBackground">@drawable/bg_bottom_sheet_dialog_fragment</item>-->
+    <!--        <item name="android:backgroundDimEnabled">true</item>-->
+    <!--        <item name="android:backgroundDimAmount">0.3</item>-->
+    <!--        <item name="android:windowFrame">@null</item>-->
+    <!--        <item name="android:windowIsFloating">true</item>-->
+    <!--    </style>-->
+
+    <style name="MyCheckBox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/white_blue</item>
+        <item name="colorControlActivated">@color/white_blue</item>
+    </style>
+
+    <style name="TextBtn" parent="carbon_TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowDx">2</item>
+        <item name="android:shadowDy">4</item>
+        <item name="android:shadowRadius">8</item>
+        <item name="android:paddingVertical" tools:ignore="NewApi">10dp</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="carbon_cornerRadius">20dp</item>
+        <item name="carbon_elevation">5dp</item>
+        <item name="carbon_rippleColor">@color/transparent_click</item>
+        <item name="carbon_elevationShadowColor">@color/shadow</item>
+    </style>
+
+    <style name="TextFloatingMenu" parent="android:Widget.TextView">
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@drawable/shape_white_rd5</item>
+        <item name="android:paddingVertical" tools:ignore="NewApi">4dp</item>
+        <item name="android:paddingHorizontal" tools:ignore="NewApi">10dp</item>
+    </style>
+
+    <style name="DialogMenuLeft" parent="android:Theme.Translucent.NoTitleBar">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="DialogTransparent" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ui.home.BinFragment">
+
+    <LinearLayout
+        android:id="@+id/linearMenuTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#09AAFF"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_back"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/TextTitleNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="Synchronize"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnClose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_close"
+                android:visibility="gone"
+                app:carbon_rippleColor="@color/transparent_click"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnMenuRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_menu_left"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <carbon.widget.TextView
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@color/white"
+        android:drawableStart="@drawable/ic_google"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/nunito_black"
+        android:gravity="center"
+        android:paddingHorizontal="80dp"
+        android:paddingVertical="8dp"
+        android:text="@string/google"
+        android:textColor="#888888"
+        android:textSize="15sp"
+        app:carbon_stroke="@color/blue"
+        app:carbon_strokeWidth="2dp"
+        app:carbon_cornerRadius="20dp"
+        app:carbon_elevation="4dp"
+        app:carbon_elevationShadowColor="@color/black"
+        app:carbon_rippleColor="@color/transparent_click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearMenuTop"
+        tools:ignore="HardcodedText" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

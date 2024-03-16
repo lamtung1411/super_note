@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_24sdp"
+    android:background="@color/white"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    app:carbon_cornerRadius="5dp">
+
+    <ImageView
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_24dp"
+        android:src="@drawable/ic_logo"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        tools:ignore="HardcodedText,SpUsage" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/TextBlackBr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="Bạn có thích Locator không ?"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="Tell us how was your experience ?"
+        android:visibility="gone" />
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:id="@+id/simpleRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        app:clickable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:starCount="5"
+        app:starEmpty="@drawable/ic_end_rate"
+        app:starFill="@drawable/ic_star_rate"
+        app:starImageHeight="60dp"
+        app:starImagePadding="10dp"
+        app:starImageWidth="60dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="24dp"
+        android:orientation="horizontal">
+
+        <carbon.widget.TextView
+            android:id="@+id/btnLater"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:text="Later"
+            android:textColor="@color/white"
+            app:carbon_cornerRadius="5dp" />
+
+        <carbon.widget.TextView
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:text="Submit"
+            android:textColor="@color/white"
+            app:carbon_cornerRadius="5dp" />
+
+    </LinearLayout>
+</carbon.widget.LinearLayout>

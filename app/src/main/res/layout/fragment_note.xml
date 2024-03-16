@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contraintBackGroundNote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAEB"
+    android:orientation="vertical"
+    tools:context=".ui.note.NoteFragment">
+
+    <LinearLayout
+        android:id="@+id/linearMenuTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_back"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <EditText
+                android:id="@+id/edtTitle"
+                style="@style/TextTitleNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/heading"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_save"
+                app:carbon_rippleColor="@color/transparent_click"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnMenuRightList"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_menu_left"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.github.onecode369.wysiwyg.WYSIWYG
+        android:id="@+id/noteLibrary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearMenuTop"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:scrollbarSize="0.5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:src="@drawable/ic_brush"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnUndo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="15dp"
+                android:src="@drawable/undo"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnRedo"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:src="@drawable/redo"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnBold"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/bold"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnItalic"
+                android:layout_width="53dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/italic"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnUnderline"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:src="@drawable/underline"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <!--            <carbon.widget.ImageView-->
+            <!--                android:id="@+id/btnSubscript"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:src="@drawable/subscript"-->
+            <!--                app:carbon_rippleColor="@color/transparent_click" />-->
+
+            <!--            <carbon.widget.ImageView-->
+            <!--                android:id="@+id/btnSuperScript"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:src="@drawable/superscript"-->
+            <!--                app:carbon_rippleColor="@color/transparent_click" />-->
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnStrikeThrough"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:src="@drawable/strikethrough"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnHeading1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/h1"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnHeading2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/h2"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnHeading3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/h3"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnHeading4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/h4"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnHeading5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/h5"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnHeading6"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/h6"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnTxtColor"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:src="@drawable/txt_color"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnBgColor"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="15dp"
+                android:src="@drawable/bg_color"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnIndent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/indent"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnOutdent"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/outdent"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnAlignLeft"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/justify_left"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnAlignCenter"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/justify_center"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnAlignJustify"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/justify_full"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnAlignRight"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/justify_right"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnInsertBullets"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/list_bulleted"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnInsertNumbers"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/list_numbered"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnBlockQuote"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/blockquote"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <!--            <carbon.widget.ImageView-->
+            <!--                android:id="@+id/btnInsertImage"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:src="@drawable/insert_photo"-->
+            <!--                app:carbon_rippleColor="@color/transparent_click" />-->
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnInsertCode"
+                android:layout_width="58dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="@null"
+                android:padding="10dp"
+                android:src="@drawable/code"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <!--            <carbon.widget.ImageView-->
+            <!--                android:id="@+id/btnInsertCheckBox"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:src="@drawable/ic_check_box"-->
+            <!--                app:carbon_rippleColor="@color/transparent_click" />-->
+
+            <!--            <carbon.widget.ImageView-->
+            <!--                android:id="@+id/btnChangeFontType"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:src="@drawable/ic_baseline_font_download_24"-->
+            <!--                app:carbon_rippleColor="@color/transparent_click" />-->
+
+            <!--            <carbon.widget.ImageView-->
+            <!--                android:id="@+id/btnPreview"-->
+            <!--                android:layout_width="48dp"-->
+            <!--                android:layout_height="48dp"-->
+            <!--                android:background="@null"-->
+            <!--                android:contentDescription="@null"-->
+            <!--                android:padding="10dp"-->
+            <!--                android:src="@drawable/visibility"-->
+            <!--                app:carbon_rippleColor="@color/transparent_click"/>-->
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

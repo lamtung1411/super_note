@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="20dp"
+    app:carbon_cornerRadius="7dp">
+
+    <TextView
+        style="@style/TextTitleNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@drawable/bin"
+        android:gravity="center"
+        android:drawablePadding="10dp"
+        android:text="@string/dialog_restore_title"
+        android:textColor="#171717"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tvInformation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/info_dialog_restore"
+        android:textColor="#1B362E"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <carbon.widget.TextView
+            android:id="@+id/btnDismiss"
+            style="@style/TextTitleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#EFF2FA"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="@string/cancel"
+            android:textColor="#5B6068"
+            app:carbon_cornerRadius="5dp" />
+
+        <carbon.widget.TextView
+            android:id="@+id/btnRestore"
+            style="@style/TextTitleNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:background="@color/yellow"
+            android:gravity="center"
+            android:paddingVertical="10dp"
+            android:text="@string/restore"
+            app:carbon_cornerRadius="5dp" />
+
+
+    </LinearLayout>
+</carbon.widget.LinearLayout>

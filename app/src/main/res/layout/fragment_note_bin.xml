@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/contraintBackGroundNote"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFAEB"
+    android:orientation="vertical"
+    tools:context=".ui.note.NoteFragment">
+
+    <LinearLayout
+        android:id="@+id/linearMenuTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_back"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+            <EditText
+                android:id="@+id/edtTitle"
+                style="@style/TextTitleNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/heading"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <carbon.widget.TextView
+                android:id="@+id/btnRestore"
+                style="@style/TextTitleNote"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="@string/restore"
+                android:textColor="@color/yellow"
+                android:textSize="@dimen/_9sdp"
+                android:paddingHorizontal="20dp"
+                app:carbon_cornerRadius="5dp"
+                app:carbon_rippleColor="@color/transparent_click"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnDeleteBin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:padding="10dp"
+                android:src="@drawable/ic_delete_white"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.github.onecode369.wysiwyg.WYSIWYG
+        android:id="@+id/noteLibrary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearMenuTop" />
+
+    <View
+        android:id="@+id/viewShade"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/noteLibrary"
+        app:layout_constraintEnd_toEndOf="@+id/noteLibrary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearMenuTop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

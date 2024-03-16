@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<carbon.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:paddingBottom="20dp"
+    android:background="@color/white"
+    app:carbon_cornerRadius="7dp"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextTitleNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="@string/dialog_save_title"
+        android:textColor="#171717"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/dialog_save_title"
+        android:textColor="#1B362E"
+        android:textSize="17sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="20dp">
+
+        <carbon.widget.TextView
+            android:id="@+id/btnDismiss"
+            style="@style/TextWhiteCapsBr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingVertical="10dp"
+            app:carbon_cornerRadius="5dp"
+            android:background="@color/yellow"
+            android:text="@string/cancel" />
+
+        <carbon.widget.TextView
+            android:id="@+id/btnSave"
+            style="@style/TextWhiteCapsBr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="1"
+            android:paddingVertical="10dp"
+            app:carbon_cornerRadius="5dp"
+            android:background="@color/yellow"
+            android:text="@string/save" />
+
+
+    </LinearLayout>
+</carbon.widget.LinearLayout>

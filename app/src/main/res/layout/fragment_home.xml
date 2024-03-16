@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/linearMenuTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#09AAFF"
+        android:orientation="vertical"
+        android:paddingVertical="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_setting"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+
+            <EditText
+                android:id="@+id/edtTitle"
+                style="@style/TextTitleNote"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/app_note"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                app:carbon_rippleColor="@color/transparent_click"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_search_note"
+                android:visibility="visible"
+                app:carbon_rippleColor="@color/transparent_click"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnCloud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_cloud"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnUpgrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_premie"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+
+            <carbon.widget.ImageView
+                android:id="@+id/btnMenuRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:src="@drawable/ic_menu_left"
+                app:carbon_rippleColor="@color/transparent_click" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.newsoft.nscustom.view.recyclerview.NSRecyclerview
+        android:id="@+id/rvCategory"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearMenuTop" />
+
+    <com.newsoft.super_note.utils.fab.FloatingActionMenu
+        android:id="@+id/btnMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu_animationDelayPerItem="50"
+        app:menu_backgroundColor="@android:color/transparent"
+        app:menu_buttonSpacing="0dp"
+        app:menu_colorNormal="@color/blue"
+        app:menu_colorPressed="@color/transparent_click"
+        app:menu_colorRipple="#99d4d4d4"
+        app:menu_fab_size="normal"
+        app:menu_icon="@drawable/ic_pencil"
+        app:menu_labels_colorNormal="@color/white"
+        app:menu_labels_colorPressed="#444"
+        app:menu_labels_colorRipple="#66efecec"
+        app:menu_labels_cornerRadius="3dp"
+        app:menu_labels_ellipsize="none"
+        app:menu_labels_maxLines="-1"
+        app:menu_labels_position="left"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_singleLine="false"
+        app:menu_labels_style="@style/TextFloatingMenu"
+        app:menu_openDirection="up"
+        app:menu_shadowColor="#66717171"
+        app:menu_shadowRadius="4dp"
+        app:menu_shadowXOffset="1dp"
+        app:menu_shadowYOffset="4dp"
+        app:menu_showShadow="true">
+
+        <com.newsoft.super_note.utils.fab.FloatingActionButton
+            android:id="@+id/btnNewNote"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_note"
+            app:fab_colorNormal="@color/blue"
+            app:fab_label="@string/add_txt_note"
+            app:fab_progress_backgroundColor="@color/white"
+            app:fab_size="mini" />
+
+        <com.newsoft.super_note.utils.fab.FloatingActionButton
+            android:id="@+id/btnNewList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list"
+            app:fab_colorNormal="@color/blue"
+            app:fab_label="@string/add_checklist"
+            app:fab_progress_backgroundColor="@color/white"
+            app:fab_size="mini" />
+
+    </com.newsoft.super_note.utils.fab.FloatingActionMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

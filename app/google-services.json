@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "230288348822",
+    "project_id": "sale-manageme",
+    "storage_bucket": "sale-manageme.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:230288348822:android:6a71d92418fdf58beb54b7",
+        "android_client_info": {
+          "package_name": "com.newsoft.super_note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "230288348822-jlditc9k50n7jgg8bsusmpj4u49ecbn8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Q7GyhJiRwWeNrkc99u3VPU5uuFewojs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "230288348822-jlditc9k50n7jgg8bsusmpj4u49ecbn8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
